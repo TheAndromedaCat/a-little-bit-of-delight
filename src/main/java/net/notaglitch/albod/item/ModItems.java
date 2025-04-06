@@ -14,7 +14,8 @@ public class ModItems {
 
     public static final Item BLUEBERRIES = registerItem("blueberries",
             new AliasedBlockItem(ModBlocks.BLUEBERRY_BUSH, new Item.Settings().food(ModFoodComponents.BLUEBERRY)));
-
+    public static final Item BLUEBERRY_PIE = registerItem("blueberry_pie",
+            new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_PIE)));
 
 
     private static Item registerItem(String name, Item item) {

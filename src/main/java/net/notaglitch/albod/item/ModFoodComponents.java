@@ -5,5 +5,9 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 
 public class ModFoodComponents {
-    public static final FoodComponent BLUEBERRY = new FoodComponent.Builder().snack().nutrition(2).saturationModifier(0.15f).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 40), 0.10f).build();
+    public static final FoodComponent BLUEBERRY = new FoodComponent.Builder().snack().nutrition(2).saturationModifier(0.15f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 40), 0.10f).build();
+
+    public static final FoodComponent BLUEBERRY_PIE = new FoodComponent.Builder().nutrition(4).saturationModifier(0.25f)
+            .build();
 }
