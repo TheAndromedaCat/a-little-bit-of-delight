@@ -12,10 +12,10 @@ import net.notaglitch.albod.ALittleBitOfDelight;
 public class ModItemGroups {
     public static final ItemGroup ABLOD_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(ALittleBitOfDelight.MOD_ID, "albod_items"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.BLUEBERRY))
-                    .displayName(Text.translatable("itemgroup.albom.items"))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.BLUEBERRIES))
+                    .displayName(Text.translatable("itemgroup.albod.items"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModItems.BLUEBERRY);
+                        entries.add(ModItems.BLUEBERRIES);
 
                     }).build());
     public static void registerItemGroups(){

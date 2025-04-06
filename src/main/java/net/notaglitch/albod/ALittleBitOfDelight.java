@@ -2,6 +2,7 @@ package net.notaglitch.albod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.notaglitch.albod.block.ModBlocks;
 import net.notaglitch.albod.item.ModItemGroups;
 import net.notaglitch.albod.item.ModItems;
 import net.notaglitch.albod.sound.ModSounds;
@@ -19,5 +20,6 @@ public class ALittleBitOfDelight implements ModInitializer {
 		ModItems.registerModItems();
 		ModSounds.registerSounds();
 		ModLootTableModifiers.modifyLootTables();
+		ModBlocks.registerModBlocks();
 	}
 }
