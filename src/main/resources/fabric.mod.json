@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "albod",
+	"version": "${version}",
+	"name": "A Little Bit of Delight",
+	"description": "In development add-on for Farmer's Delight for A Little Bit of Everything",
+	"authors": [
+		"TheAndromedaCat","A Little Bit of Everything Team","Not a Glitch Studios"
+	],
+	"contact": {
+		"homepage": "https://go.notaglitch.net/alboe",
+		"sources": "https://github.com/Lunaside-Modding/a-little-bit-of-delight"
+	},
+	"license": "MIT license",
+	"icon": "assets/albod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.notaglitch.albod.ALittleBitOfDelight"
+		],
+		"fabric-datagen": [
+			"net.notaglitch.albod.ALittleBitOfDelightDataGenerator"
+		],
+		"client": [
+			"net.notaglitch.albod.ALittleBitOfDelightClient"
+		]
+	},
+	"mixins": [
+		"albod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
