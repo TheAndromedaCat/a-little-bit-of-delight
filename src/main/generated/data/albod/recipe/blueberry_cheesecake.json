@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "albod:blueberries"
+    },
+    "M": {
+      "item": "minecraft:milk_bucket"
+    },
+    "P": {
+      "item": "farmersdelight:pie_crust"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BBB",
+    "MPM"
+  ],
+  "result": {
+    "count": 1,
+    "id": "albod:blueberry_cheesecake"
+  }
+}

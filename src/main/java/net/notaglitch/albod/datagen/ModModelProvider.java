@@ -7,7 +7,7 @@ import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.notaglitch.albod.block.ModBlocks;
 import net.notaglitch.albod.block.custom.BlueberryBushBlock;
-import net.notaglitch.albod.item.ModItems;
+import net.notaglitch.albod.item.AModItems;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -23,7 +23,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.BLUEBERRY_CHEESECAKE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.BLUEBERRY_CHEESECAKE_SLICE, Models.GENERATED);
+        itemModelGenerator.register(AModItems.BLUEBERRY_CHEESECAKE, Models.GENERATED);
+        itemModelGenerator.register(AModItems.BLUEBERRY_CHEESECAKE_SLICE, Models.GENERATED);
     }
 }

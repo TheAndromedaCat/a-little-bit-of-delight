@@ -4,7 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.notaglitch.albod.block.ModBlocks;
 import net.notaglitch.albod.item.ModItemGroups;
-import net.notaglitch.albod.item.ModItems;
+import net.notaglitch.albod.item.AModItems;
 import net.notaglitch.albod.sound.ModSounds;
 import net.notaglitch.albod.util.ModLootTableModifiers;
 import org.slf4j.Logger;
@@ -17,7 +17,7 @@ public class ALittleBitOfDelight implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
-		ModItems.registerModItems();
+		AModItems.registerModItems();
 		ModSounds.registerSounds();
 		ModLootTableModifiers.modifyLootTables();
 		ModBlocks.registerModBlocks();
