@@ -10,12 +10,12 @@ import net.minecraft.util.Identifier;
 import net.notaglitch.albod.ALittleBitOfDelight;
 import net.notaglitch.albod.block.ModBlocks;
 
-public class ModItems {
+public class AModItems {
 
     public static final Item BLUEBERRIES = registerItem("blueberries",
             new AliasedBlockItem(ModBlocks.BLUEBERRY_BUSH, new Item.Settings().food(ModFoodComponents.BLUEBERRY)));
     public static final Item BLUEBERRY_CHEESECAKE = registerItem("blueberry_cheesecake",
-            new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_CHEESECAKE)));
+            new Item(new Item.Settings()));
     public static final Item BLUEBERRY_CHEESECAKE_SLICE = registerItem("blueberry_cheesecake_slice",
             new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_CHEESECAKE_SLICE)));
 
