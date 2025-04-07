@@ -16,6 +16,8 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.albod.items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.BLUEBERRIES);
+                        entries.add(ModItems.BLUEBERRY_CHEESECAKE);
+                        entries.add(ModItems.BLUEBERRY_CHEESECAKE_SLICE);
 
                     }).build());
     public static void registerItemGroups(){

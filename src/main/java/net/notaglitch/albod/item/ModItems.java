@@ -14,8 +14,10 @@ public class ModItems {
 
     public static final Item BLUEBERRIES = registerItem("blueberries",
             new AliasedBlockItem(ModBlocks.BLUEBERRY_BUSH, new Item.Settings().food(ModFoodComponents.BLUEBERRY)));
-    public static final Item BLUEBERRY_PIE = registerItem("blueberry_pie",
-            new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_PIE)));
+    public static final Item BLUEBERRY_CHEESECAKE = registerItem("blueberry_cheesecake",
+            new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_CHEESECAKE)));
+    public static final Item BLUEBERRY_CHEESECAKE_SLICE = registerItem("blueberry_cheesecake_slice",
+            new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_CHEESECAKE_SLICE)));
 
 
     private static Item registerItem(String name, Item item) {
@@ -28,6 +30,8 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.SEARCH).register(entries -> {
             entries.add(BLUEBERRIES);
+            entries.add(BLUEBERRY_CHEESECAKE);
+            entries.add(BLUEBERRY_CHEESECAKE_SLICE);
         });
     }
 

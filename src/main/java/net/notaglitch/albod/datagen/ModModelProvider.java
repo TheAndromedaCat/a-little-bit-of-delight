@@ -23,6 +23,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-
+        itemModelGenerator.register(ModItems.BLUEBERRY_CHEESECAKE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLUEBERRY_CHEESECAKE_SLICE, Models.GENERATED);
     }
 }

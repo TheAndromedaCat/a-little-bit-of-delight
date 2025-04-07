@@ -1,7 +1,9 @@
-// 1.21.1	2025-04-06T18:13:36.7350551	A Little Bit of Delight/Model Definitions
+// 1.21.1	2025-04-07T00:10:01.7549199	A Little Bit of Delight/Model Definitions
 d616ace3bfdfffdf1c63207b59b538f0f929f97e assets\albod\blockstates\blueberry_bush.json
 1fa8b9ec8a6f66698d4fd4f8f6ad7dd587fb1f3a assets\albod\models\item\blueberries.json
 bc16e1b4baa355c3f499710ce772852e225ea274 assets\albod\models\block\blueberry_bush_stage1.json
+abd662abc9b6634124bbcc8073275d09bc406885 assets\albod\models\item\blueberry_cheesecake_slice.json
 8f9c61cbed0634f3b6e0b118fc4df729a0c954a8 assets\albod\models\block\blueberry_bush_stage0.json
 e189b7fdb69fc87beda0de95f0a0603593ffafd8 assets\albod\models\block\blueberry_bush_stage3.json
 e2bc97e9ef49246ab72f45c628bda011ee9e23b7 assets\albod\models\block\blueberry_bush_stage2.json
+b10e2eebb27a40ad3a14a547e73e82cea81ba2fc assets\albod\models\item\blueberry_cheesecake.json
