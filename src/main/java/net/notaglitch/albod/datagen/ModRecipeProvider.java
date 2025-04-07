@@ -39,15 +39,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(AModItems.BLUEBERRIES),conditionsFromItem(AModItems.BLUEBERRIES))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, AModItems.BLUEBERRY_CHEESECAKE)
-                .pattern("BBB")
-                .pattern("BBB")
-                .pattern("MPM")
-                .input('B', AModItems.BLUEBERRIES)
-                .input('M', ModItems.MILK_BOTTLE.get())
-                .input('P', ModItems.PIE_CRUST.get())
-                .criterion(hasItem(AModItems.BLUEBERRIES),conditionsFromItem(AModItems.BLUEBERRIES))
-                .offerTo(exporter);
         // Put Blueberry Cheesecake Slice recipe here for when I can figure that out.
     }
 }
