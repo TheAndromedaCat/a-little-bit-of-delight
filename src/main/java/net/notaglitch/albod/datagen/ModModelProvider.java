@@ -24,5 +24,6 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(AModItems.BLUEBERRY_CHEESECAKE_SLICE, Models.GENERATED);
+        itemModelGenerator.register(AModBlocks.BLUEBERRY_CHEESECAKE.asItem(), Models.GENERATED);
     }
 }
