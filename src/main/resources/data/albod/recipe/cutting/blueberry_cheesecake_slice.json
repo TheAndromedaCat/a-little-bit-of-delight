@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "albod:blueberry_cheesecake"
+    }
+  ],
+  "result": [
+    {
+      "count": 4,
+      "item": "albod:blueberry_cheesecake_slice"
+    }
+  ],
+  "tool": {
+    "tag": "albod:knives"
+  }
+}

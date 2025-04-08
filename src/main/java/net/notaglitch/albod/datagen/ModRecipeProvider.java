@@ -9,9 +9,9 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.util.Identifier;
 import net.notaglitch.albod.ALittleBitOfDelight;
 import net.notaglitch.albod.item.AModItems;
+import org.intellij.lang.annotations.Identifier;
 import vectorwing.farmersdelight.common.crafting.CuttingBoardRecipeInput;
 import vectorwing.farmersdelight.common.registry.ModItems;
 import vectorwing.farmersdelight.integration.crafttweaker.handlers.CuttingBoardRecipeHandler;
@@ -38,7 +38,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('P', ModItems.PIE_CRUST.get())
                 .criterion(hasItem(AModItems.BLUEBERRIES),conditionsFromItem(AModItems.BLUEBERRIES))
                 .offerTo(exporter);
-
         // Put Blueberry Cheesecake Slice recipe here for when I can figure that out.
     }
 }
