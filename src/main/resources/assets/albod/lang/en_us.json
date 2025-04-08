@@ -1,9 +1,10 @@
 {
   "item.albod.blueberries": "Blueberries",
   "item.albod.blueberry_cheesecake": "Blueberry Cheesecake",
-  "item.albod.blueberry_cheesecake_slice": "Blueberry Cheesecake Slice",
+  "item.albod.blueberry_cheesecake_slice": "Slice of Blueberry Cheesecake",
 
   "block.albod.blueberry_bush": "Blueberry Bush",
+  "block.albod.blueberry_cheesecake": "Blueberry Cheesecake",
 
 
   "itemgroup.albod.items": "A Little Bit of Delight"

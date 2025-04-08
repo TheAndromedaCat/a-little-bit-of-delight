@@ -8,15 +8,16 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.notaglitch.albod.ALittleBitOfDelight;
+import net.notaglitch.albod.block.AModBlocks;
 
 public class ModItemGroups {
-    public static final ItemGroup ABLOD_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup ALBOD_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(ALittleBitOfDelight.MOD_ID, "albod_items"),
             FabricItemGroup.builder().icon(() -> new ItemStack(AModItems.BLUEBERRIES))
                     .displayName(Text.translatable("itemgroup.albod.items"))
                     .entries((displayContext, entries) -> {
                         entries.add(AModItems.BLUEBERRIES);
-                        entries.add(AModItems.BLUEBERRY_CHEESECAKE);
+                        entries.add(AModBlocks.BLUEBERRY_CHEESECAKE);
                         entries.add(AModItems.BLUEBERRY_CHEESECAKE_SLICE);
 
                     }).build());

@@ -8,14 +8,12 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.notaglitch.albod.ALittleBitOfDelight;
-import net.notaglitch.albod.block.ModBlocks;
+import net.notaglitch.albod.block.AModBlocks;
 
 public class AModItems {
 
     public static final Item BLUEBERRIES = registerItem("blueberries",
-            new AliasedBlockItem(ModBlocks.BLUEBERRY_BUSH, new Item.Settings().food(ModFoodComponents.BLUEBERRY)));
-    public static final Item BLUEBERRY_CHEESECAKE = registerItem("blueberry_cheesecake",
-            new Item(new Item.Settings()));
+            new AliasedBlockItem(AModBlocks.BLUEBERRY_BUSH, new Item.Settings().food(ModFoodComponents.BLUEBERRY)));
     public static final Item BLUEBERRY_CHEESECAKE_SLICE = registerItem("blueberry_cheesecake_slice",
             new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_CHEESECAKE_SLICE)));
 
@@ -30,7 +28,6 @@ public class AModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.SEARCH).register(entries -> {
             entries.add(BLUEBERRIES);
-            entries.add(BLUEBERRY_CHEESECAKE);
             entries.add(BLUEBERRY_CHEESECAKE_SLICE);
         });
     }

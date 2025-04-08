@@ -21,6 +21,15 @@ repositories {
             excludeGroup "io.github.fabricators_of_create"
         }
     }
+	maven {
+		name = "Modrinth"
+		url = "https://api.modrinth.com/maven"
+	}
+
+	maven {
+		name = "CurseMaven"
+		url = "https://cursemaven.com"
+	}
 }
 
 fabricApi {
@@ -41,6 +50,7 @@ dependencies {
     modImplementation("vectorwing:FarmersDelight:${fdrf_version}") {
         exclude(group: "net.fabricmc")
     }
+	modImplementation "maven.modrinth:fabric-seasons:2.4.2-BETA+1.21"
 	
 }
 

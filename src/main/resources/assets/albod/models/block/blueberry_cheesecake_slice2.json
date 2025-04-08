@@ -1,0 +1,11 @@
+{
+  "parent": "farmersdelight:block/pie_slice2",
+  "render_type": "cutout",
+  "textures": {
+    "particle": "albod:block/blueberry_cheesecake_top",
+    "bottom": "albod:block/pie_bottom",
+    "inner": "albod:block/blueberry_cheesecake_inner",
+    "side": "albod:block/pie_side",
+    "top": "albod:block/blueberry_cheesecake_top"
+  }
+}

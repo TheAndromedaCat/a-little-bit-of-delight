@@ -7,11 +7,13 @@
   ],
   "result": [
     {
-      "count": 4,
-      "item": "albod:blueberry_cheesecake_slice"
+      "item": {
+        "id": "albod:blueberry_cheesecake_slice",
+        "count": 4
+      }
     }
   ],
   "tool": {
-    "tag": "albod:knives"
+    "tag": "c:tools/knife"
   }
 }

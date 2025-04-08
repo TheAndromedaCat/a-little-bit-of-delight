@@ -10,6 +10,7 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.notaglitch.albod.ALittleBitOfDelight;
+import net.notaglitch.albod.block.AModBlocks;
 import net.notaglitch.albod.item.AModItems;
 import org.intellij.lang.annotations.Identifier;
 import vectorwing.farmersdelight.common.crafting.CuttingBoardRecipeInput;
@@ -29,7 +30,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(RecipeExporter exporter) {
         List<ItemConvertible> CRAFTING_RECIPES = List.of(AModItems.BLUEBERRIES, Items.MILK_BUCKET, ModItems.MILK_BOTTLE.get(), ModItems.PIE_CRUST.get());
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, AModItems.BLUEBERRY_CHEESECAKE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, AModBlocks.BLUEBERRY_CHEESECAKE)
                 .pattern("BBB")
                 .pattern("BBB")
                 .pattern("MPM")

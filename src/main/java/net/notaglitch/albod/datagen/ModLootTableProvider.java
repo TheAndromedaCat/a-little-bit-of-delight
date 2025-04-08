@@ -14,7 +14,7 @@ import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.predicate.StatePredicate;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
-import net.notaglitch.albod.block.ModBlocks;
+import net.notaglitch.albod.block.AModBlocks;
 import net.notaglitch.albod.block.custom.BlueberryBushBlock;
 import net.notaglitch.albod.item.AModItems;
 
@@ -29,18 +29,18 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
 
-        this.addDrop(ModBlocks.BLUEBERRY_BUSH,
+        this.addDrop(AModBlocks.BLUEBERRY_BUSH,
                 block -> this.applyExplosionDecay(
                         block,
                         LootTable.builder()
                                 .pool(
                                         LootPool.builder()
                                                 .conditionally(
-                                                        BlockStatePropertyLootCondition.builder(ModBlocks.BLUEBERRY_BUSH).properties(StatePredicate.Builder.create().exactMatch(BlueberryBushBlock.AGE, 3))
+                                                        BlockStatePropertyLootCondition.builder(AModBlocks.BLUEBERRY_BUSH).properties(StatePredicate.Builder.create().exactMatch(BlueberryBushBlock.AGE, 3))
                                                 ).with(ItemEntry.builder(AModItems.BLUEBERRIES)).apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(2.0F, 3.0F)))
                                                 .apply(ApplyBonusLootFunction.uniformBonusCount(impl.getOrThrow(Enchantments.FORTUNE)))
                                 ).pool(LootPool.builder().conditionally(
-                                        BlockStatePropertyLootCondition.builder(ModBlocks.BLUEBERRY_BUSH).properties(StatePredicate.Builder.create().exactMatch(BlueberryBushBlock.AGE, 2))
+                                        BlockStatePropertyLootCondition.builder(AModBlocks.BLUEBERRY_BUSH).properties(StatePredicate.Builder.create().exactMatch(BlueberryBushBlock.AGE, 2))
                                 ).with(ItemEntry.builder(AModItems.BLUEBERRIES))
                                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0F, 2.0F)))
                                         .apply(ApplyBonusLootFunction.uniformBonusCount(impl.getOrThrow(Enchantments.FORTUNE))).build()

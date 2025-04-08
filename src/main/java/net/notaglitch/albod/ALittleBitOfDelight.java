@@ -1,11 +1,10 @@
 package net.notaglitch.albod;
 
-import com.jcraft.jorbis.Block;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.item.Item;
 import net.minecraft.registry.tag.TagKey;
-import net.notaglitch.albod.block.ModBlocks;
+import net.notaglitch.albod.block.AModBlocks;
 import net.notaglitch.albod.item.ModItemGroups;
 import net.notaglitch.albod.item.AModItems;
 import net.notaglitch.albod.sound.ModSounds;
@@ -25,6 +24,6 @@ public class ALittleBitOfDelight implements ModInitializer {
 		AModItems.registerModItems();
 		ModSounds.registerSounds();
 		ModLootTableModifiers.modifyLootTables();
-		ModBlocks.registerModBlocks();
+		AModBlocks.registerModBlocks();
 	}
 }
