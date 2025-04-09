@@ -5,7 +5,7 @@
     "id": "minecraft:bucket"
   },
   "experience": 10.0,
-  "cookingtime": 1200,
+  "cookingtime": 600,
   "ingredients": [
     {
       "item": "minecraft:bone"
