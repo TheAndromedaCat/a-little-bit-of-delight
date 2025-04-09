@@ -3,6 +3,8 @@ package net.notaglitch.albod.item;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.Item;
+import vectorwing.farmersdelight.common.item.DrinkableItem;
 
 public class ModFoodComponents {
     public static final FoodComponent BLUEBERRY = new FoodComponent.Builder().snack().nutrition(2).saturationModifier(0.15f)

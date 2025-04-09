@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKeys;
@@ -11,6 +12,7 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.notaglitch.albod.ALittleBitOfDelight;
 import net.notaglitch.albod.block.AModBlocks;
+import net.notaglitch.albod.item.custom.GelatinBucketItem;
 
 public class AModItems {
     public static final TagKey<Item> MILK = TagKey.of(RegistryKeys.ITEM,
@@ -27,7 +29,7 @@ public class AModItems {
     public static final Item EMPTY_JAR = registerItem("empty_jar",
             new Item(new Item.Settings()));
     public static final Item GELATIN_BUCKET = registerItem("gelatin_bucket",
-            new Item(new Item.Settings()));
+            new GelatinBucketItem(new Item.Settings().recipeRemainder(Items.BUCKET)));
     public static final Item GELATIN_POWDER = registerItem("gelatin_powder",
             new Item(new Item.Settings()));
 

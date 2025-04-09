@@ -27,8 +27,20 @@ repositories {
 	}
 
 	maven {
-		name = "CurseMaven"
-		url = "https://cursemaven.com"
+		url "https://cursemaven.com"
+		content {
+			includeGroup "curse.maven"
+		}
+	}
+	exclusiveContent {
+		forRepository {
+			maven {
+				url "https://cursemaven.com"
+			}
+		}
+		filter {
+			includeGroup "curse.maven"
+		}
 	}
 }
 
@@ -52,6 +64,8 @@ dependencies {
     }
 	modImplementation "maven.modrinth:fabric-seasons:2.4.2-BETA+1.21"
 	compileOnly 'maven.modrinth:fabric-seasons:2.4.2-BETA+1.21'
+
+	modImplementation "curse.maven:moredelight-964408:6357948"
 }
 
 processResources {
