@@ -32,6 +32,15 @@ public class AModItems {
             new GelatinBucketItem(new Item.Settings().recipeRemainder(Items.BUCKET)));
     public static final Item GELATIN_POWDER = registerItem("gelatin_powder",
             new Item(new Item.Settings()));
+    public static final Item BLUEBERRY_JELLY = registerItem("blueberry_jelly",
+            new Item(new Item.Settings()));
+    public static final Item BLUEBERRY_JAM = registerItem("blueberry_jam",
+            new Item(new Item.Settings()));
+    public static final Item TOAST_WITH_BLUEBERRY_JELLY = registerItem("toast_with_blueberry_jelly",
+            new Item(new Item.Settings()));
+    public static final Item BLUEBERRY_JELLY_SANDWICH = registerItem("blueberry_jelly_sandwich",
+            new Item(new Item.Settings()));
+
 
 
     private static Item registerItem(String name, Item item) {
@@ -50,6 +59,10 @@ public class AModItems {
             entries.add(EMPTY_JAR);
             entries.add(GELATIN_BUCKET);
             entries.add(GELATIN_POWDER);
+            entries.add(BLUEBERRY_JELLY);
+            entries.add(BLUEBERRY_JAM);
+            entries.add(BLUEBERRY_JELLY_SANDWICH);
+            entries.add(TOAST_WITH_BLUEBERRY_JELLY);
         });
     }
 
