@@ -1,3 +1,9 @@
-// 1.21.1	2025-04-08T20:21:52.9950221	A Little Bit of Delight/Recipes
+// 1.21.1	2025-04-08T23:43:02.8548767	A Little Bit of Delight/Recipes
+171e0810f865ac385e53240b2e60213633e14ff6 data\albod\recipe\gelatin_powder_from_smelting_gelatin_bucket.json
+395a5f47df1be06885e6068dd13ed8ee438a511f data\albod\advancement\recipes\food\gelatin_powder_from_smelting_gelatin_bucket.json
+f7bee159c7778ed8a61157031a84a5736f9d09fa data\albod\advancement\recipes\misc\empty_jar.json
+0de35ca51ad09d42a3f3058034ef12b1df15a44d data\albod\recipe\empty_jar.json
 66ad2519d73244a7100a4d5d722f6435a8b8f86a data\albod\recipe\blueberry_cheesecake.json
 f5e5c0f2a5ca9818b08107ecbff8e6da811c3c9b data\albod\advancement\recipes\food\blueberry_cheesecake.json
+500a6a8aa8db398d3b886c28fd16c25b51f2bb2d data\albod\advancement\recipes\food\blueberry_cookie.json
+bdc68661169f8d2d0434c7d76697504f4b95c055 data\albod\recipe\blueberry_cookie.json

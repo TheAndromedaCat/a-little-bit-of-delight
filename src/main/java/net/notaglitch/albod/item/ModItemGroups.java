@@ -19,6 +19,12 @@ public class ModItemGroups {
                         entries.add(AModItems.BLUEBERRIES);
                         entries.add(AModBlocks.BLUEBERRY_CHEESECAKE);
                         entries.add(AModItems.BLUEBERRY_CHEESECAKE_SLICE);
+                        entries.add(AModItems.BLUEBERRY_COOKIE);
+                        entries.add(AModItems.BLUEBERRY_PIE_SLICE);
+                        entries.add(AModBlocks.BLUEBERRY_PIE);
+                        entries.add(AModItems.EMPTY_JAR);
+                        entries.add(AModItems.GELATIN_BUCKET);
+                        entries.add(AModItems.GELATIN_POWDER);
 
                     }).build());
     public static void registerItemGroups(){

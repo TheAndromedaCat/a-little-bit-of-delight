@@ -19,6 +19,7 @@ public class AModBlocks {
     public static final Block BLUEBERRY_BUSH = registerBlockWithoutBlockItem("blueberry_bush",
             new BlueberryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
     public static final Block BLUEBERRY_CHEESECAKE = registry(new PieBlock(AbstractBlock.Settings.copy(ModBlocks.SWEET_BERRY_CHEESECAKE.get()), () -> AModItems.BLUEBERRY_CHEESECAKE_SLICE), "blueberry_cheesecake");
+    public static final Block BLUEBERRY_PIE = registry(new PieBlock(AbstractBlock.Settings.copy(ModBlocks.APPLE_PIE.get()), () -> AModItems.BLUEBERRY_PIE_SLICE), "blueberry_pie");
 
     private static Block registry(Block block, String name) {
         Registry.register(Registries.BLOCK, Identifier.of("albod", name), block);

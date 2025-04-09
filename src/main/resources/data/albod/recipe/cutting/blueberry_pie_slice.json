@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "albod:blueberry_pie"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "id": "albod:blueberry_pie_slice",
+        "count": 4
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

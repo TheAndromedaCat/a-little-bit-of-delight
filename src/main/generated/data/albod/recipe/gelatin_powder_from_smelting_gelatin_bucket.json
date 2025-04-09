@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 0.25,
+  "group": "gelatin_powder",
+  "ingredient": {
+    "item": "albod:gelatin_bucket"
+  },
+  "result": {
+    "id": "albod:gelatin_powder"
+  }
+}

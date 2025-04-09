@@ -3,12 +3,13 @@ package net.notaglitch.albod.datagen;
 import com.mojang.datafixers.types.templates.Tag;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.data.server.recipe.RecipeExporter;
-import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.RecipeSerializer;
+import net.minecraft.recipe.SmeltingRecipe;
+import net.minecraft.recipe.SmokingRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
@@ -33,7 +34,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
-        List<ItemConvertible> CRAFTING_RECIPES = List.of(AModItems.BLUEBERRIES, Items.MILK_BUCKET, ModItems.MILK_BOTTLE.get(), ModItems.PIE_CRUST.get());
+        List<ItemConvertible> GELATIN_POWDER = List.of(AModItems.GELATIN_BUCKET);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, AModBlocks.BLUEBERRY_CHEESECAKE)
                 .pattern("BBB")
@@ -42,11 +43,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('B', AModItems.BLUEBERRIES)
                 .input('M', AModItems.MILK)
                 .input('P', ModItems.PIE_CRUST.get())
-                .criterion(hasItem(AModItems.BLUEBERRIES),conditionsFromItem(AModItems.BLUEBERRIES))
+                .criterion(hasItem(AModItems.BLUEBERRIES), conditionsFromItem(AModItems.BLUEBERRIES))
                 .offerTo(exporter);
 
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, AModItems.BLUEBERRY_COOKIE)
+                .input(Items.WHEAT)
+                .input(Items.WHEAT)
+                .input(AModItems.BLUEBERRIES)
+                .criterion(hasItem(AModItems.BLUEBERRIES), conditionsFromItem(AModItems.BLUEBERRIES))
+                .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, AModItems.EMPTY_JAR)
+                .pattern("   ")
+                .pattern("G G")
+                .pattern("GGG")
+                .input('G', Items.GLASS)
+                .criterion(hasItem(Items.GLASS), conditionsFromItem(Items.GLASS))
+                .offerTo(exporter);
 
-
+        offerSmelting(exporter, GELATIN_POWDER, RecipeCategory.FOOD, AModItems.GELATIN_POWDER, 0.25f, 300, "gelatin_powder");
     }
 }
