@@ -20,6 +20,16 @@ public class AModItems {
             new AliasedBlockItem(AModBlocks.BLUEBERRY_BUSH, new Item.Settings().food(ModFoodComponents.BLUEBERRY)));
     public static final Item BLUEBERRY_CHEESECAKE_SLICE = registerItem("blueberry_cheesecake_slice",
             new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_CHEESECAKE_SLICE)));
+    public static final Item BLUEBERRY_COOKIE = registerItem("blueberry_cookie",
+            new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_COOKIE)));
+    public static final Item BLUEBERRY_PIE_SLICE = registerItem("blueberry_pie_slice",
+            new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_PIE_SLICE)));
+    public static final Item EMPTY_JAR = registerItem("empty_jar",
+            new Item(new Item.Settings()));
+    public static final Item GELATIN_BUCKET = registerItem("gelatin_bucket",
+            new Item(new Item.Settings()));
+    public static final Item GELATIN_POWDER = registerItem("gelatin_powder",
+            new Item(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {
@@ -33,6 +43,11 @@ public class AModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.SEARCH).register(entries -> {
             entries.add(BLUEBERRIES);
             entries.add(BLUEBERRY_CHEESECAKE_SLICE);
+            entries.add(BLUEBERRY_COOKIE);
+            entries.add(BLUEBERRY_PIE_SLICE);
+            entries.add(EMPTY_JAR);
+            entries.add(GELATIN_BUCKET);
+            entries.add(GELATIN_POWDER);
         });
     }
 

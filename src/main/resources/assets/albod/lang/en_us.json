@@ -2,9 +2,13 @@
   "item.albod.blueberries": "Blueberries",
   "item.albod.blueberry_cheesecake": "Blueberry Cheesecake",
   "item.albod.blueberry_cheesecake_slice": "Slice of Blueberry Cheesecake",
+  "item.albod.blueberry_pie_slice": "Slice of Blueberry Pie",
+  "item.albod.empty_jar": "Glass Jar",
+  "item.albod.gelatin_bucket": "Gelatin Bucket",
 
   "block.albod.blueberry_bush": "Blueberry Bush",
   "block.albod.blueberry_cheesecake": "Blueberry Cheesecake",
+  "block.albod.blueberry_pie": "Blueberry Pie",
 
 
   "itemgroup.albod.items": "A Little Bit of Delight"
