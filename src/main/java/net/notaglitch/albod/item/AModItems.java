@@ -6,11 +6,15 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.notaglitch.albod.ALittleBitOfDelight;
 import net.notaglitch.albod.block.AModBlocks;
 
 public class AModItems {
+    public static final TagKey<Item> MILK = TagKey.of(RegistryKeys.ITEM,
+            Identifier.of(ALittleBitOfDelight.MOD_ID, "milk"));
 
     public static final Item BLUEBERRIES = registerItem("blueberries",
             new AliasedBlockItem(AModBlocks.BLUEBERRY_BUSH, new Item.Settings().food(ModFoodComponents.BLUEBERRY)));

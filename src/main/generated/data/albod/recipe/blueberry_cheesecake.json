@@ -6,7 +6,7 @@
       "item": "albod:blueberries"
     },
     "M": {
-      "item": "minecraft:milk_bucket"
+      "tag": "albod:milk"
     },
     "P": {
       "item": "farmersdelight:pie_crust"

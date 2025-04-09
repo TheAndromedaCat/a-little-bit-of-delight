@@ -1,18 +1,23 @@
 package net.notaglitch.albod.datagen;
 
+import com.mojang.datafixers.types.templates.Tag;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.TagEntry;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 import net.notaglitch.albod.ALittleBitOfDelight;
 import net.notaglitch.albod.block.AModBlocks;
 import net.notaglitch.albod.item.AModItems;
-import org.intellij.lang.annotations.Identifier;
 import vectorwing.farmersdelight.common.crafting.CuttingBoardRecipeInput;
 import vectorwing.farmersdelight.common.registry.ModItems;
 import vectorwing.farmersdelight.integration.crafttweaker.handlers.CuttingBoardRecipeHandler;
@@ -35,10 +40,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("BBB")
                 .pattern("MPM")
                 .input('B', AModItems.BLUEBERRIES)
-                .input('M', Items.MILK_BUCKET)
+                .input('M', AModItems.MILK)
                 .input('P', ModItems.PIE_CRUST.get())
                 .criterion(hasItem(AModItems.BLUEBERRIES),conditionsFromItem(AModItems.BLUEBERRIES))
                 .offerTo(exporter);
-        // Put Blueberry Cheesecake Slice recipe here for when I can figure that out.
+
+
+
+
     }
 }
