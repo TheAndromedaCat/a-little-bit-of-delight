@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "side": "albod:block/blueberry_crate_side",
+    "bottom": "albod:block/crate_bottom",
+    "top": "albod:block/blueberry_crate_top"
+  }
+}

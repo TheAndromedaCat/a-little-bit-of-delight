@@ -25,6 +25,7 @@ public class ModItemGroups {
                         entries.add(AModItems.EMPTY_JAR);
                         entries.add(AModItems.GELATIN_BUCKET);
                         entries.add(AModItems.GELATIN_POWDER);
+                        entries.add(AModBlocks.BLUEBERRY_CRATE);
 
                     }).build());
     public static void registerItemGroups(){
