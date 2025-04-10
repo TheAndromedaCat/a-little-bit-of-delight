@@ -25,4 +25,5 @@ public class ModFoodComponents {
 
     public static final FoodComponent BLUEBERRY_JELLY = new FoodComponent.Builder().nutrition(1).saturationModifier(1.0f)
             .build();
+
 }

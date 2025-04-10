@@ -13,6 +13,7 @@ import net.minecraft.util.Identifier;
 import net.notaglitch.albod.ALittleBitOfDelight;
 import net.notaglitch.albod.block.AModBlocks;
 import net.notaglitch.albod.item.custom.GelatinBucketItem;
+import vectorwing.farmersdelight.common.registry.ModItems;
 
 public class AModItems {
     public static final TagKey<Item> MILK = TagKey.of(RegistryKeys.ITEM,
@@ -33,7 +34,7 @@ public class AModItems {
     public static final Item RAW_GELATIN_BRICK = registerItem("raw_gelatin_brick",
             new Item(new Item.Settings().food(ModFoodComponents.RAW_GELATIN_BRICK)));
     public static final Item BLUEBERRY_JELLY = registerItem("blueberry_jelly",
-            new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_JELLY)));
+            new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_JELLY).recipeRemainder(AModItems.EMPTY_JAR).maxCount(16)));
     public static final Item BLUEBERRY_JAM = registerItem("blueberry_jam",
             new Item(new Item.Settings()));
     public static final Item TOAST_WITH_BLUEBERRY_JELLY = registerItem("toast_with_blueberry_jelly",
@@ -46,7 +47,6 @@ public class AModItems {
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(ALittleBitOfDelight.MOD_ID, name), item);
     }
-
 
 
 
