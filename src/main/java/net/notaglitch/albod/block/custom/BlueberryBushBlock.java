@@ -3,6 +3,9 @@ package net.notaglitch.albod.block.custom;
 import net.fabricmc.fabric.impl.item.RecipeRemainderHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SweetBerryBushBlock;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
@@ -10,6 +13,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 import net.minecraft.world.event.GameEvent;
@@ -23,6 +27,21 @@ public class BlueberryBushBlock extends SweetBerryBushBlock {
     @Override
     public ItemStack getPickStack(WorldView world, BlockPos pos, BlockState state) {
         return new ItemStack(AModItems.BLUEBERRIES);
+    }
+
+
+    @Override
+    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
+        if (entity instanceof LivingEntity && entity.getType() != EntityType.FOX && entity.getType() != EntityType.BEE) {
+            entity.slowMovement(state, new Vec3d(0.8F, 0.75, 0.8F));
+            if (!world.isClient && (Integer)state.get(AGE) > 0 && (entity.lastRenderX != entity.getX() || entity.lastRenderZ != entity.getZ())) {
+                double d = Math.abs(entity.getX() - entity.lastRenderX);
+                double e = Math.abs(entity.getZ() - entity.lastRenderZ);
+                if (d >= 0.003F || e >= 0.003F) {
+                    entity.damage(world.getDamageSources().sweetBerryBush(), 0.0F);
+                }
+            }
+        }
     }
 
     @Override

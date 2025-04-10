@@ -1,7 +1,6 @@
 package net.notaglitch.albod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.*;
 import net.minecraft.item.ItemGroups;
@@ -12,8 +11,6 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.notaglitch.albod.ALittleBitOfDelight;
 import net.notaglitch.albod.block.AModBlocks;
-import net.notaglitch.albod.item.custom.GelatinBucketItem;
-import vectorwing.farmersdelight.common.registry.ModItems;
 
 public class AModItems {
     public static final TagKey<Item> MILK = TagKey.of(RegistryKeys.ITEM,
@@ -36,7 +33,7 @@ public class AModItems {
     public static final Item BLUEBERRY_JELLY = registerItem("blueberry_jelly",
             new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_JELLY).recipeRemainder(AModItems.EMPTY_JAR).maxCount(16)));
     public static final Item BLUEBERRY_JAM = registerItem("blueberry_jam",
-            new Item(new Item.Settings()));
+            new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_JELLY).recipeRemainder(AModItems.EMPTY_JAR).maxCount(16)));
     public static final Item TOAST_WITH_BLUEBERRY_JELLY = registerItem("toast_with_blueberry_jelly",
             new Item(new Item.Settings()));
     public static final Item BLUEBERRY_JELLY_SANDWICH = registerItem("blueberry_jelly_sandwich",
