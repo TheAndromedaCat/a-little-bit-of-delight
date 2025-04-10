@@ -3,7 +3,6 @@ package net.notaglitch.albod.mixin;
 import io.github.lucaargolo.seasons.FabricSeasons;
 import io.github.lucaargolo.seasons.utils.Season;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;

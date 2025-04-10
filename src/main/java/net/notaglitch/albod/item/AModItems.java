@@ -1,6 +1,7 @@
 package net.notaglitch.albod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.*;
 import net.minecraft.item.ItemGroups;
@@ -12,9 +13,13 @@ import net.minecraft.util.Identifier;
 import net.notaglitch.albod.ALittleBitOfDelight;
 import net.notaglitch.albod.block.AModBlocks;
 
+import java.util.function.Supplier;
+
 public class AModItems {
     public static final TagKey<Item> MILK = TagKey.of(RegistryKeys.ITEM,
             Identifier.of(ALittleBitOfDelight.MOD_ID, "milk"));
+    public static final Supplier<FoodComponent> JELLY = () -> new FoodComponent.Builder().nutrition(1).saturationModifier(1.0f).usingConvertsTo(AModItems.EMPTY_JAR.asItem())
+            .build();
 
     public static final Item BLUEBERRIES = registerItem("blueberries",
             new AliasedBlockItem(AModBlocks.BLUEBERRY_BUSH, new Item.Settings().food(ModFoodComponents.BLUEBERRY)));
@@ -31,9 +36,9 @@ public class AModItems {
     public static final Item RAW_GELATIN_BRICK = registerItem("raw_gelatin_brick",
             new Item(new Item.Settings().food(ModFoodComponents.RAW_GELATIN_BRICK)));
     public static final Item BLUEBERRY_JELLY = registerItem("blueberry_jelly",
-            new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_JELLY).recipeRemainder(AModItems.EMPTY_JAR).maxCount(16)));
+            new Item(new Item.Settings().food(JELLY.get()).recipeRemainder(AModItems.EMPTY_JAR).maxCount(16)));
     public static final Item BLUEBERRY_JAM = registerItem("blueberry_jam",
-            new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_JELLY).recipeRemainder(AModItems.EMPTY_JAR).maxCount(16)));
+            new Item(new Item.Settings().food(JELLY.get()).recipeRemainder(AModItems.EMPTY_JAR).maxCount(16)));
     public static final Item TOAST_WITH_BLUEBERRY_JELLY = registerItem("toast_with_blueberry_jelly",
             new Item(new Item.Settings()));
     public static final Item BLUEBERRY_JELLY_SANDWICH = registerItem("blueberry_jelly_sandwich",
@@ -63,6 +68,7 @@ public class AModItems {
             entries.add(BLUEBERRY_JELLY_SANDWICH);
             entries.add(TOAST_WITH_BLUEBERRY_JELLY);
         });
+
     }
 
 }

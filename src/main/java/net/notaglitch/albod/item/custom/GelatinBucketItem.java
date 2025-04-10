@@ -1,8 +1,6 @@
 package net.notaglitch.albod.item.custom;
 
 import net.minecraft.advancement.criterion.Criteria;
-import net.minecraft.block.FurnaceBlock;
-import net.minecraft.block.entity.FurnaceBlockEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
