@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:campfire_cooking",
+    "ingredient": {
+        "item": "albod:raw_gelatin_brick"
+    },
+    "result": {
+        "id": "albod:gelatin_powder"
+    },
+    "experience": 0.3,
+    "cookingtime": 350,
+    "group": "gelatin_powder"
+}

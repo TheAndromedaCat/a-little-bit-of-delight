@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_gelatin_bucket": {
+    "has_raw_gelatin_brick": {
       "conditions": {
         "items": [
           {
-            "items": "albod:gelatin_bucket"
+            "items": "albod:raw_gelatin_brick"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:gelatin_powder_from_smelting_gelatin_bucket"
+        "recipe": "minecraft:gelatin_powder_from_smelting_raw_gelatin_brick"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_gelatin_bucket"
+      "has_raw_gelatin_brick"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:gelatin_powder_from_smelting_gelatin_bucket"
+      "minecraft:gelatin_powder_from_smelting_raw_gelatin_brick"
     ]
   }
 }

@@ -34,7 +34,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
-        List<ItemConvertible> GELATIN_POWDER = List.of(AModItems.GELATIN_BUCKET);
+        List<ItemConvertible> GELATIN_POWDER = List.of(AModItems.RAW_GELATIN_BRICK);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, AModBlocks.BLUEBERRY_CHEESECAKE)
                 .pattern("BBB")
@@ -69,6 +69,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(AModItems.BLUEBERRIES), conditionsFromItem(AModItems.BLUEBERRIES))
                 .offerTo(exporter);
 
-        offerSmelting(exporter, GELATIN_POWDER, RecipeCategory.FOOD, AModItems.GELATIN_POWDER, 0.25f, 300, "gelatin_powder");
+        offerSmelting(exporter, GELATIN_POWDER, RecipeCategory.FOOD, AModItems.GELATIN_POWDER, 0.3f, 300, "gelatin_powder");
     }
 }

@@ -23,8 +23,8 @@ public class ModItemGroups {
                         entries.add(AModItems.BLUEBERRY_PIE_SLICE);
                         entries.add(AModBlocks.BLUEBERRY_PIE);
                         entries.add(AModItems.EMPTY_JAR);
-                        entries.add(AModItems.GELATIN_BUCKET);
                         entries.add(AModItems.GELATIN_POWDER);
+                        entries.add(AModItems.RAW_GELATIN_BRICK);
                         entries.add(AModBlocks.BLUEBERRY_CRATE);
 
                     }).build());

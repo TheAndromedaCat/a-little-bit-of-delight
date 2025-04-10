@@ -62,8 +62,8 @@ dependencies {
     modImplementation("vectorwing:FarmersDelight:${fdrf_version}") {
         exclude(group: "net.fabricmc")
     }
-	modImplementation "maven.modrinth:fabric-seasons:2.4.2-BETA+1.21"
-	compileOnly 'maven.modrinth:fabric-seasons:2.4.2-BETA+1.21'
+	modImplementation "maven.modrinth:fabric-seasons:${seasons_version}"
+	compileOnly "maven.modrinth:fabric-seasons:${seasons_version}"
 
 	modImplementation "curse.maven:moredelight-964408:6357948"
 }

@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smoking",
+    "ingredient": {
+        "item": "albod:raw_gelatin_brick"
+    },
+    "result": {
+        "id": "albod:gelatin_powder"
+    },
+    "experience": 0.3,
+    "cookingtime": 150,
+    "group": "gelatin_powder"
+}

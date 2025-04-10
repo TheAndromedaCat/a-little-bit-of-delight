@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "albod:item/gelatin_bucket"
+    "layer0": "albod:item/raw_gelatin_brick"
   }
 }

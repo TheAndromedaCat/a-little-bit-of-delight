@@ -20,4 +20,9 @@ public class ModFoodComponents {
     public static final FoodComponent BLUEBERRY_PIE_SLICE = new FoodComponent.Builder().nutrition(3).saturationModifier(0.25f)
             .build();
 
+    public static final FoodComponent RAW_GELATIN_BRICK = new FoodComponent.Builder().nutrition(1).saturationModifier(0.50f)
+            .build();
+
+    public static final FoodComponent BLUEBERRY_JELLY = new FoodComponent.Builder().nutrition(1).saturationModifier(1.0f)
+            .build();
 }

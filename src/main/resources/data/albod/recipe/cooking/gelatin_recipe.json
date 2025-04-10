@@ -1,21 +1,8 @@
 {
   "type": "farmersdelight:cooking",
-  "container": {
-    "count": 1,
-    "id": "minecraft:bucket"
-  },
-  "experience": 10.0,
-  "cookingtime": 600,
+  "experience": 6.0,
+  "cookingtime": 400,
   "ingredients": [
-    {
-      "item": "minecraft:bone"
-    },
-    {
-      "item": "minecraft:bone"
-    },
-    {
-      "item": "minecraft:bone"
-    },
     {
       "item": "minecraft:bone"
     },
@@ -28,7 +15,7 @@
   ],
   "recipe_book_tab": "misc",
   "result": {
-    "count": 1,
-    "id": "albod:gelatin_bucket"
+    "count": 2,
+    "id": "albod:raw_gelatin_brick"
   }
 }
