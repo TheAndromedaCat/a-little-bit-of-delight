@@ -63,7 +63,6 @@ public class AModItems {
             entries.add(BLUEBERRY_JAM);
             entries.add(BLUEBERRY_JELLY_SANDWICH);
             entries.add(TOAST_WITH_BLUEBERRY_JELLY);
-            entries.add(AModBlocks.BLUEBERRY_CRATE);
         });
     }
 

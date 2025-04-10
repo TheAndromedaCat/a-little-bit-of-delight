@@ -31,6 +31,5 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(AModItems.BLUEBERRY_PIE_SLICE, Models.GENERATED);
         itemModelGenerator.register(AModItems.GELATIN_BUCKET, Models.GENERATED);
         itemModelGenerator.register(AModItems.GELATIN_POWDER, Models.GENERATED);
-        itemModelGenerator.register(AModBlocks.BLUEBERRY_CRATE.asItem(), Models.GENERATED);
     }
 }

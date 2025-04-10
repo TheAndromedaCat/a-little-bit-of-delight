@@ -61,6 +61,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GLASS), conditionsFromItem(Items.GLASS))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, AModBlocks.BLUEBERRY_CRATE)
+                .pattern("BBB")
+                .pattern("BBB")
+                .pattern("BBB")
+                .input('B', AModItems.BLUEBERRIES)
+                .criterion(hasItem(AModItems.BLUEBERRIES), conditionsFromItem(AModItems.BLUEBERRIES))
+                .offerTo(exporter);
+
         offerSmelting(exporter, GELATIN_POWDER, RecipeCategory.FOOD, AModItems.GELATIN_POWDER, 0.25f, 300, "gelatin_powder");
     }
 }
