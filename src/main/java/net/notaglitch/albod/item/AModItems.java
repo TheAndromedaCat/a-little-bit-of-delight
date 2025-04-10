@@ -31,9 +31,9 @@ public class AModItems {
     public static final Item RAW_GELATIN_BRICK = registerItem("raw_gelatin_brick",
             new Item(new Item.Settings().food(ModFoodComponents.RAW_GELATIN_BRICK)));
     public static final Item BLUEBERRY_JELLY = registerItem("blueberry_jelly",
-            new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_JELLY).recipeRemainder(AModItems.EMPTY_JAR).maxCount(16)));
+            new Item(new Item.Settings().food(ModFoodComponents.JELLY_JAM).recipeRemainder(AModItems.EMPTY_JAR).maxCount(16)));
     public static final Item BLUEBERRY_JAM = registerItem("blueberry_jam",
-            new Item(new Item.Settings().food(ModFoodComponents.BLUEBERRY_JELLY).recipeRemainder(AModItems.EMPTY_JAR).maxCount(16)));
+            new Item(new Item.Settings().food(ModFoodComponents.JELLY_JAM).recipeRemainder(AModItems.EMPTY_JAR).maxCount(16)));
     public static final Item TOAST_WITH_BLUEBERRY_JELLY = registerItem("toast_with_blueberry_jelly",
             new Item(new Item.Settings()));
     public static final Item BLUEBERRY_JELLY_SANDWICH = registerItem("blueberry_jelly_sandwich",

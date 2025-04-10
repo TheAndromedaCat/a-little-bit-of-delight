@@ -23,7 +23,7 @@ public class ModFoodComponents {
     public static final FoodComponent RAW_GELATIN_BRICK = new FoodComponent.Builder().nutrition(1).saturationModifier(0.50f)
             .build();
 
-    public static final FoodComponent BLUEBERRY_JELLY = new FoodComponent.Builder().nutrition(1).saturationModifier(1.0f).usingConvertsTo(AModItems.EMPTY_JAR)
+    public static final FoodComponent JELLY_JAM = new FoodComponent.Builder().nutrition(1).saturationModifier(1.0f).usingConvertsTo(AModItems.EMPTY_JAR)
             .build();
 
 }
