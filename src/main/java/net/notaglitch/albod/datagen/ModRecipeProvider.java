@@ -46,13 +46,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(AModItems.BLUEBERRIES), conditionsFromItem(AModItems.BLUEBERRIES))
                 .offerTo(exporter);
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, AModItems.BLUEBERRY_COOKIE)
-                .input(Items.WHEAT)
-                .input(Items.WHEAT)
-                .input(AModItems.BLUEBERRIES)
-                .criterion(hasItem(AModItems.BLUEBERRIES), conditionsFromItem(AModItems.BLUEBERRIES))
-                .offerTo(exporter);
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, AModItems.EMPTY_JAR)
                 .pattern("   ")
                 .pattern("G G")
@@ -66,6 +59,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("BBB")
                 .pattern("BBB")
                 .input('B', AModItems.BLUEBERRIES)
+                .criterion(hasItem(AModItems.BLUEBERRIES), conditionsFromItem(AModItems.BLUEBERRIES))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, AModItems.BLUEBERRY_COOKIE)
+                .input(Items.WHEAT)
+                .input(Items.WHEAT)
+                .input(AModItems.BLUEBERRIES)
                 .criterion(hasItem(AModItems.BLUEBERRIES), conditionsFromItem(AModItems.BLUEBERRIES))
                 .offerTo(exporter);
 
