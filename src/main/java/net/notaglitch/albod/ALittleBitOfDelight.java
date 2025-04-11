@@ -9,6 +9,7 @@ import net.notaglitch.albod.block.AModBlocks;
 import net.notaglitch.albod.item.ModItemGroups;
 import net.notaglitch.albod.item.AModItems;
 import net.notaglitch.albod.sound.ModSounds;
+import net.notaglitch.albod.util.AModTags;
 import net.notaglitch.albod.util.ModLootTableModifiers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,5 +28,6 @@ public class ALittleBitOfDelight implements ModInitializer {
 		ModSounds.registerSounds();
 		ModLootTableModifiers.modifyLootTables();
 		AModBlocks.registerModBlocks();
+		AModTags.registerModTags();
 	}
 }

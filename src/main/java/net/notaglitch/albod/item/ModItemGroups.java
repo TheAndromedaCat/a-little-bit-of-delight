@@ -11,7 +11,7 @@ import net.notaglitch.albod.ALittleBitOfDelight;
 import net.notaglitch.albod.block.AModBlocks;
 
 public class ModItemGroups {
-    public static final ItemGroup ALBOD_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup ALBOD_PASTRIES_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(ALittleBitOfDelight.MOD_ID, "albod_items"),
             FabricItemGroup.builder().icon(() -> new ItemStack(AModItems.BLUEBERRIES))
                     .displayName(Text.translatable("itemgroup.albod.items"))
@@ -28,8 +28,15 @@ public class ModItemGroups {
                         entries.add(AModBlocks.BLUEBERRY_CRATE);
                         entries.add(AModItems.BLUEBERRY_JELLY);
                         entries.add(AModItems.BLUEBERRY_JAM);
+                        entries.add(AModItems.BLUEBERRY_JELLY_SANDWICH);
+                        entries.add(AModItems.TOAST_WITH_BLUEBERRY_JELLY);
+                        entries.add(AModItems.BLUEBERRY_JUICE);
+                        entries.add(AModItems.BLUEBERRY_MILK);
+                        entries.add(AModItems.BLUEBERRY_SYRUP);
+                        entries.add(AModItems.BLUEBERRY_SCONE);
 
                     }).build());
+
     public static void registerItemGroups(){
         ALittleBitOfDelight.LOGGER.info("Registering Item Groups for " + ALittleBitOfDelight.MOD_ID);
     }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "albod:blueberry_jelly"
+    },
+    {
+      "item": "moredelight:toast"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "albod:toast_with_blueberry_jelly"
+  }
+}

@@ -14,7 +14,7 @@ public class ModSounds {
     }
 
     public static void registerSounds(){
-        ALittleBitOfDelight.LOGGER.info("Registering Mod Sounds for " + ALittleBitOfDelight.MOD_ID);
+        ALittleBitOfDelight.LOGGER.info("[ALBOD] Custom sounds? We got em here!");
     }
 }
 

@@ -1,11 +1,21 @@
-// 1.21.1	2025-04-10T18:29:06.8466614	A Little Bit of Delight/Recipes
+// 1.21.1	2025-04-10T22:00:55.2293002	A Little Bit of Delight/Recipes
 473560cd9cd8ca32c2061fa3d234cfed54420d54 data\albod\advancement\recipes\food\gelatin_powder_from_smelting_raw_gelatin_brick.json
+e175c6797be3956f76f23cb316d8f99b858c8344 data\albod\recipe\toast_with_blueberries.json
 f7bee159c7778ed8a61157031a84a5736f9d09fa data\albod\advancement\recipes\misc\empty_jar.json
 0de35ca51ad09d42a3f3058034ef12b1df15a44d data\albod\recipe\empty_jar.json
 66ad2519d73244a7100a4d5d722f6435a8b8f86a data\albod\recipe\blueberry_cheesecake.json
+672ba4013c965c0f08e7f4b96840b9210b9f9a50 data\albod\recipe\blueberry_scone.json
+1c208cddd97c0f0ae08ea2177f36ac69d505ae5b data\albod\advancement\recipes\food\toast_with_blueberries.json
+b3d32c5c158b8fdbbc66cef49ca249d4d89ac2ea data\albod\recipe\blueberry_pie.json
+fee59e1e2ca23fcff554c7881ae5a3fd9622cc3e data\albod\advancement\recipes\food\blueberry_milk.json
+500a6a8aa8db398d3b886c28fd16c25b51f2bb2d data\albod\advancement\recipes\food\blueberry_cookie.json
+f5f1151025789c359c66c32de1f9e63747e9dbdf data\albod\advancement\recipes\food\blueberry_scone.json
+d7880204a5d5610104f1beafb19e8f03c368e8ae data\albod\advancement\recipes\food\blueberry_pie.json
 ad98959f9e01b35d30839152b02a0b00352adfff data\albod\recipe\gelatin_powder_from_smelting_raw_gelatin_brick.json
 892862cd1a24e0f15b9b76f0e800cdd8b5d442d0 data\albod\recipe\blueberry_crate.json
+caa040294812895276f66d1ddea5db8ac3fffc95 data\albod\recipe\toast_with_blueberry_jelly.json
+53ecac4c535620281a908cb4e59a86595458ca92 data\albod\recipe\blueberry_milk.json
 f5e5c0f2a5ca9818b08107ecbff8e6da811c3c9b data\albod\advancement\recipes\food\blueberry_cheesecake.json
-500a6a8aa8db398d3b886c28fd16c25b51f2bb2d data\albod\advancement\recipes\food\blueberry_cookie.json
 bdc68661169f8d2d0434c7d76697504f4b95c055 data\albod\recipe\blueberry_cookie.json
 20712b1e28c422ad021fb19602764cdac06b1488 data\albod\advancement\recipes\misc\blueberry_crate.json
+f82b07bf4ac6f5bbb9e5b76263dc36c4650a713d data\albod\advancement\recipes\food\toast_with_blueberry_jelly.json

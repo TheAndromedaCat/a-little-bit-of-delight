@@ -8,6 +8,14 @@
   "item.albod.raw_gelatin_brick": "Raw Gelatin",
   "item.albod.blueberry_jelly": "Jar of Blueberry Jelly",
   "item.albod.blueberry_jam": "Jar of Blueberry Jam",
+  "item.albod.blueberry_jelly_sandwich": "Blueberry Jelly Sandwich",
+  "item.albod.toast_with_blueberry_jelly": "Toast with Blueberry Jelly",
+  "item.albod.blueberry_juice": "Blueberry Juice",
+  "item.albod.blueberry_milk": "Blueberry Milk",
+  "item.albod.blueberry_syrup": "Blueberry Syrup",
+  "item.albod.blueberry_scone": "Blueberry Scone",
+
+  "farmersdelight.tooltip.blueberry_milk": "Clears 1 Effect, and gives Instant Health and Health Boost for 10 seconds",
 
   "block.albod.blueberry_bush": "Blueberry Bush",
   "block.albod.blueberry_cheesecake": "Blueberry Cheesecake",
