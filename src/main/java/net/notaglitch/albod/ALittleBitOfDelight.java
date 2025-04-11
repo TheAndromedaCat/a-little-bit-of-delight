@@ -11,6 +11,7 @@ import net.notaglitch.albod.item.AModItems;
 import net.notaglitch.albod.sound.ModSounds;
 import net.notaglitch.albod.util.AModTags;
 import net.notaglitch.albod.util.ModLootTableModifiers;
+import net.notaglitch.albod.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import vectorwing.farmersdelight.common.tag.ModTags;
@@ -29,5 +30,6 @@ public class ALittleBitOfDelight implements ModInitializer {
 		ModLootTableModifiers.modifyLootTables();
 		AModBlocks.registerModBlocks();
 		AModTags.registerModTags();
+		ModWorldGeneration.generateModWorldGen();
 	}
 }
