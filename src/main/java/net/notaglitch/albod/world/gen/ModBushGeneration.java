@@ -1,15 +1,9 @@
 package net.notaglitch.albod.world.gen;
 
-import com.mojang.datafixers.types.templates.Tag;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
-import net.minecraft.registry.Registry;
-import net.minecraft.registry.tag.TagKey;
-import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
-import net.minecraft.world.gen.structure.OceanRuinStructure;
-import net.notaglitch.albod.util.AModTags;
 import net.notaglitch.albod.world.ModPlacedFeatures;
 
 public class ModBushGeneration {

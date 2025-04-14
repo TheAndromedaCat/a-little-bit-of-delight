@@ -3,13 +3,11 @@ package net.notaglitch.albod.item.custom;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.world.World;
 import net.notaglitch.albod.util.AModTags;
 import vectorwing.farmersdelight.common.item.MilkBottleItem;
-import vectorwing.farmersdelight.common.tag.ModTags;
 
 import java.util.ArrayList;
 import java.util.Iterator;

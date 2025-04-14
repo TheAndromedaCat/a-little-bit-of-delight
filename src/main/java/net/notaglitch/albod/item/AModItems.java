@@ -1,10 +1,7 @@
 package net.notaglitch.albod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.Portal;
 import net.minecraft.component.type.FoodComponent;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.*;
 import net.minecraft.item.ItemGroups;
@@ -17,8 +14,6 @@ import net.notaglitch.albod.ALittleBitOfDelight;
 import net.notaglitch.albod.block.AModBlocks;
 import net.notaglitch.albod.item.custom.BlueberryJuiceItem;
 import net.notaglitch.albod.item.custom.BlueberryMilkItem;
-import vectorwing.farmersdelight.common.item.DrinkableItem;
-import vectorwing.farmersdelight.common.item.MilkBottleItem;
 
 import java.util.function.Supplier;
 
